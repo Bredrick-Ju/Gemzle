@@ -1042,6 +1042,27 @@ line {
     cursor: wait
 }
 
+/* Fix: ensure the loading intro is centered and sized correctly on real mobile devices
+   Use viewport-relative sizing and fixed positioning only on small screens so desktop
+   / Windows mobile emulator behavior is unchanged. */
+@media (max-width: 800px), (max-height: 800px) {
+    #intro-container {
+        position: fixed;
+        inset: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1500;
+        background: #F5EFE6;
+        cursor: wait;
+    }
+
+    /* make the loading logo a bit larger on small devices for visibility */
+    #loading-logo {
+        width: 140px;
+        height: 140px;
+    }
+}
+
 footer {
     margin-bottom: 20px
 }
