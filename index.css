@@ -1025,17 +1025,25 @@ line {
     #music-credit-container {
         justify-content: center
     }
+    /* Ensure the divider under social icons is green on small/tall mobile viewports */
+    #menu-container hr {
+        background-color: #16DC49;
+        border: none;
+        height: 2px;
+        margin: 15px 0;
+    }
     .active-menu-item:after {
         position: absolute;
-        height: 3px;
-        margin: 0 auto;
+        height: 14px;
+        width: 14px;
+        display: flex;
+        border-radius: 50%;
         content: "";
-        background: #0055FE;
-        width: 100%;
-        bottom: -2px;
-        left: 0;
-        transform: translateY(16px);
-        border-radius: 0
+        color: #fff;
+        background: #16DC49;
+        left: -10px;
+        top: 50%;
+        transform: translate(-16px, -50%);
     }
     .active-menu-item {
         transform: unset
