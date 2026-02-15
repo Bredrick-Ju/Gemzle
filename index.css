@@ -1025,6 +1025,7 @@ line {
     #music-credit-container {
         justify-content: center
     }
+    /*
     /* Ensure the divider under social icons is green on small/tall mobile viewports */
     #menu-container hr {
         background-color: #16DC49;
